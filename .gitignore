@@ -1,6 +1,7 @@
 
 .eslintrc.js
 typings.json
+public/bundle.js
 
 node_modules
 typings
