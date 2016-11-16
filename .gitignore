@@ -1,7 +1,16 @@
 
-.eslintrc.js
-typings.json
+#build
 public/bundle.js
 
+#dependencies
 node_modules
+
+#tool
 typings
+.eslintrc.js
+typings.json
+
+# misc
+.DS_Store
+.env
+npm-debug.log

@@ -7,7 +7,7 @@ var users = [];
 app.use(express.static('./public'));
 app.use(express.static('./node_modules/bootstrap/dist'));
 
-var server = app.listen(3000);
+var server = app.listen(3003);
 //socket server also listening on port 3000
 var io = require('socket.io').listen(server);
 

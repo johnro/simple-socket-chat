@@ -1,27 +1,82 @@
 * {
-	background-color: #191414;
-	color: #FFFFFF;
-	margin: 0px;
-	padding: 0px;
 	box-sizing: border-box;
 }
 
-body {
-	font: 12px Helvetica, Arial;
+html {
+	font-weight: 300;
+	-webkit-font-smoothing: antialiased;
 }
 
-#messages {
-	list-style-type: none;
+html, input {
+	font-family: "Roboto", sans-serif;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+	list-style: none;
+	word-wrap: break-word;
+}
+
+.mainHeader {
+	background-color: red;
+}
+
+.login.page {
+	background-color: #000;
+	color: #fff;
+	height: 100px;
+	margin-top: -100px;
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	width: 100%;
+}
+
+.login.page .form .usernameInput {
+	font-size: 14px;
+	color: #FFF;
+	background-color: transparent;
+	border: none;
+	border-bottom: 2px solid #fff;
+	outline: none;
+	padding-bottom: 15px;
+	text-align: center;
+	width: 400px;
+}
+
+.chatArea {
+	height: 100%;
+	padding-bottom: 60px;
+}
+
+.messages {
+	height: 100%;
 	margin: 0;
-	padding: 0;
+	overflow-y: scroll;
+	padding: 10px 20px 10px 20px;
 }
 
-#messages li {
-	padding: 5px 10px;
+.messageInput {
+	font-size: 100%;
+	border: 10px solid #000;
+	bottom: 0;
+	height: 60px;
+	left: 0;
+	outline: none;
+	padding-left: 10px;
+	position: absolute;
+	right: 0;
+	width: 100%;
 }
 
-#mainHeader {
-	background-color: #191414;
+.userName {
+	font-weight: bolder;
+	color: #1DB954;
 }
 
 #connection-status {
@@ -31,7 +86,7 @@ body {
 	padding: 0;
 	margin: 20px;
 	display: block;
-	text-align: left;
+	float: left;
 }
 
 #connection-status.connected {

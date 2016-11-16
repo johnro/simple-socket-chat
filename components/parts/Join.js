@@ -10,15 +10,15 @@ var Join = React.createClass({
 
     render() {
         return (
-            <div>
-                <form action="javascript:void(0)" onSubmit={this.join}>
+            <div className="login page">
+                <h3 className="title">{this.props.title}</h3>
+                <form className="form" action="javascript:void(0)" onSubmit={this.join}>
                 <label>Username</label>
                 <input ref="username"
-                        className="form-control" 
+                        className="usernameInput" 
                         id="join"
-                        placeholder="enter your username..."
+                        placeholder="Type here..."
                         required/>
-                <button className="btn btn-primary">Send</button>
                 </form>
             </div>
         );
