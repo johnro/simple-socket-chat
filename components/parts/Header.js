@@ -13,7 +13,7 @@ var Header = React.createClass({
     },
     render() {
         return (
-            <div className="mainHeader">
+            <div id="topHeader" className="mainHeader">
                 <h1>{this.props.title}</h1>
                 <span className={this.props.status}>{this.props.status}</span>
                 <span id="connection-status" className={this.props.status}></span>

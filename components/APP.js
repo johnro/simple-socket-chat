@@ -18,7 +18,7 @@ var APP = React.createClass({
 
     //this handles all events coming FROM SERVER
     componentWillMount() {
-        this.socket = io('http://localhost:3003');
+        this.socket = io('http://localhost:3000');
         this.socket.on('connect', this.connect);
         this.socket.on('disconnect', this.disconnect);
         this.socket.on('joined', this.joined);

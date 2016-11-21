@@ -5,7 +5,7 @@ var Message = React.createClass({
     render() {
         return (
             <li className="message">
-            <span className="userName">{this.props.user}</span> 
+            <span className="userName"><em>{this.props.user}</em> :</span> 
             <span className="text">{this.props.message}</span>
             </li>
         );
