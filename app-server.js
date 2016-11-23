@@ -9,7 +9,7 @@ var port = 3000;
 app.use(express.static('./public'));
 app.use(express.static('./node_modules/bootstrap/dist'));
 
-var server = app.listen(port);
+var server = app.listen(process.env.port || port);
 //socket server also listening on port 3000
 var io = require('socket.io').listen(server);
 
