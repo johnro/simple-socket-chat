@@ -45,8 +45,10 @@ var APP = React.createClass({
 
     newMessage(payload) {
         console.log("Message received : (%s) %s", payload.username, payload.message);
-        var newMessage = <Message user={payload.username} message={payload.message}/>
+        //var newMessage = <Message user={payload.username} message={payload.message}/>
         var m = this.state.messages;
+        var newMessage = { user: payload.username, message : payload.message};
+        console.log(newMessage);
         m.push(newMessage);   
         this.setState( { messages : m } );
     },
