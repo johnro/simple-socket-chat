@@ -9,7 +9,15 @@ var port = 3000;
 app.use(express.static('./public'));
 app.use(express.static('./node_modules/bootstrap/dist'));
 
-var server = app.listen(process.env.port || port);
+
+var server_port = process.env.PORT || 3000;
+
+var server = app.listen(server_port, function() {
+    console.log('Listening on port %d', server_port);
+});
+
+//var server = app.listen(process.env.PORT || port);
+
 //socket server also listening on port 3000
 var io = require('socket.io').listen(server);
 
@@ -43,4 +51,4 @@ io.sockets.on('connection', function(socket) {
     console.log("Connected: %s sockets connected.", connections.length);
 });
 
-console.log("Running polling server at port *.%s", port); 
+//console.log("Running polling server at port *.%s", port); 
