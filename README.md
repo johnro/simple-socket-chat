@@ -7,7 +7,8 @@ Chat application with Node, Socket.io and React
 Download node at [nodejs.org](http://nodejs.org) and install it, if you haven't already.
 
 ```sh
-npm install simple-socket-chat --save
+npm install
+npm start
 ```
 
 
