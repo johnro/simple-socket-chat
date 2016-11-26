@@ -12,9 +12,11 @@ var APP = React.createClass({
             status: 'disconnected',
             title: 'potatoChat',
             messages: [],
-            user: {}
+            user: ''
         }
     },
+
+    
 
     //this handles all events coming FROM SERVER
     componentWillMount() {
@@ -40,23 +42,23 @@ var APP = React.createClass({
 
     joined(user) {
         console.log("Joined event > %s joined", user.name);
-        this.setState({user: user});   
+        this.setState({ user: user });
     },
 
     newMessage(payload) {
         console.log("Message received : (%s) %s", payload.username, payload.message);
         //var newMessage = <Message user={payload.username} message={payload.message}/>
         var m = this.state.messages;
-        var newMessage = { user: payload.username, message : payload.message};
+        var newMessage = { user: payload.username, message: payload.message };
         console.log(newMessage);
-        m.push(newMessage);   
-        this.setState( { messages : m } );
+        m.push(newMessage);
+        this.setState({ messages: m });
     },
 
     render() {
         return (
             <div>
-                <ChatRoom emit={this.emit} {...this.state}/>
+                <ChatRoom emit={this.emit} {...this.state} />
             </div>
         )
     }
