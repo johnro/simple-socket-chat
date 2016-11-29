@@ -2,6 +2,8 @@
 
 Chat application with Node, Socket.io and React. 
 
+Available at `https://murmuring-citadel-94599.herokuapp.com/`
+
 *This is a work in progress, stay tuned!*
 
 ## How to use
@@ -9,7 +11,6 @@ Chat application with Node, Socket.io and React.
 Download node at [nodejs.org](http://nodejs.org) and install it, if you haven't already.
 
 ```sh
-
 $ cd simple-socket-chat/
 $ npm install
 $ npm start
